@@ -298,7 +298,7 @@ sequenceDiagram
 
 ### 5.3 未决问题
 
-`docs/007-architecture.md` 末尾明示了两个开放问题：哪些触发字段可信（如 Source 的动作人与线程归属）与哪些不可信（正文与引用）；部署隔离（智能体的 profile 钉死在自己的 dsh 安装上，别处升级 dsh 不影响它）。
+`docs/007-architecture.md` 末尾明示了两个开放问题：哪些触发字段可信（如 Source 的动作人与线程归属）与哪些不可信（正文与引用）；部署隔离（智能体的 profile 固定在自己的 dsh 安装上，别处升级 dsh 不影响它）。
 
 ## 六、与 DSH 的关系：依赖面与贡献面
 
@@ -317,7 +317,7 @@ superagent 贡献给 dsh 生态的部分：一个"常驻任务系统"参考实�
 
 ## 七、未来方向
 
-从文档与开放问题出发，演进方向按原则而非路线图表述：信任边界需要形式化（哪些触发字段可信应成为代码级约束）；部署隔离需要加强（专用 OS 账户、钉死的 dsh 安装）；论文《Exploring Super-agent Design: Towards a More Autonomous Agent System》中讨论但未实现的设计是后续方向；记录清理与多机部署在规模增长后会成为必需。
+从文档与开放问题出发，演进方向按原则而非路线图表述：信任边界需要形式化（哪些触发字段可信应成为代码级约束）；部署隔离需要加强（专用 OS 账户、固定的 dsh 安装）；论文《Exploring Super-agent Design: Towards a More Autonomous Agent System》中讨论但未实现的设计是后续方向；记录清理与多机部署在规模增长后会成为必需。
 
 ## 附录 A：关键术语
 
